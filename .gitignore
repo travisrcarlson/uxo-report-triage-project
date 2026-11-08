@@ -30,3 +30,6 @@ desktop.ini
 
 # Models trained during development in Claude's workspace (the committed models are in models/)
 models_dev/
+
+# Training logs (the histories are kept in models/*.json)
+*.log
