@@ -1,0 +1,29 @@
+# Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets: an API key is never committed
+.env
+*.env
+
+# Source archives, downloaded once and kept out of the repository
+data/raw/
+
+# Local test copies of the executed notebook
+executed_*.ipynb
+
+# Runs made with the stand-in model during development
+runs_dev/
+
+# Smoke-test runs (the committed runs are in runs/)
+runs_smoke/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

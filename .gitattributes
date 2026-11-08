@@ -1,0 +1,11 @@
+# Keep the reports, rules, prompts and run records byte for byte as committed,
+# so their checksums match on every operating system.
+reports/** -text
+rules/** -text
+prompts/** -text
+runs/** -text
+*.png binary
+*.jpg binary
+*.pdf binary
+*.npz binary
+*.pt binary
