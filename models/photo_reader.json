@@ -1,0 +1,190 @@
+{
+ "trained_by": "triage/photo_reader.py, P4's random-erasing settings",
+ "epochs": 20,
+ "best_epoch": 20,
+ "training_seconds": 674,
+ "threads": 2,
+ "seed": 0,
+ "torch": "2.14.1+cpu",
+ "numpy": "2.5.4",
+ "history": [
+  {
+   "epoch": 1,
+   "learning rate": 0.001,
+   "train loss": 1.32411,
+   "validation loss": 1.586033,
+   "validation accuracy": 0.442513,
+   "validation macro-F1": 0.331681
+  },
+  {
+   "epoch": 2,
+   "learning rate": 0.000994,
+   "train loss": 1.145133,
+   "validation loss": 1.387459,
+   "validation accuracy": 0.44756,
+   "validation macro-F1": 0.373114
+  },
+  {
+   "epoch": 3,
+   "learning rate": 0.000976,
+   "train loss": 1.069899,
+   "validation loss": 1.496437,
+   "validation accuracy": 0.530006,
+   "validation macro-F1": 0.414
+  },
+  {
+   "epoch": 4,
+   "learning rate": 0.000946,
+   "train loss": 0.993775,
+   "validation loss": 1.389703,
+   "validation accuracy": 0.489624,
+   "validation macro-F1": 0.418383
+  },
+  {
+   "epoch": 5,
+   "learning rate": 0.000905,
+   "train loss": 0.956528,
+   "validation loss": 1.370563,
+   "validation accuracy": 0.538979,
+   "validation macro-F1": 0.427672
+  },
+  {
+   "epoch": 6,
+   "learning rate": 0.000854,
+   "train loss": 0.929431,
+   "validation loss": 1.399042,
+   "validation accuracy": 0.481772,
+   "validation macro-F1": 0.403284
+  },
+  {
+   "epoch": 7,
+   "learning rate": 0.000794,
+   "train loss": 0.891615,
+   "validation loss": 1.464942,
+   "validation accuracy": 0.501963,
+   "validation macro-F1": 0.418175
+  },
+  {
+   "epoch": 8,
+   "learning rate": 0.000727,
+   "train loss": 0.867004,
+   "validation loss": 1.388664,
+   "validation accuracy": 0.602356,
+   "validation macro-F1": 0.483895
+  },
+  {
+   "epoch": 9,
+   "learning rate": 0.000655,
+   "train loss": 0.840046,
+   "validation loss": 1.312762,
+   "validation accuracy": 0.546831,
+   "validation macro-F1": 0.453058
+  },
+  {
+   "epoch": 10,
+   "learning rate": 0.000578,
+   "train loss": 0.803906,
+   "validation loss": 1.308103,
+   "validation accuracy": 0.521032,
+   "validation macro-F1": 0.436279
+  },
+  {
+   "epoch": 11,
+   "learning rate": 0.0005,
+   "train loss": 0.784266,
+   "validation loss": 1.568677,
+   "validation accuracy": 0.606282,
+   "validation macro-F1": 0.479573
+  },
+  {
+   "epoch": 12,
+   "learning rate": 0.000422,
+   "train loss": 0.774929,
+   "validation loss": 1.592177,
+   "validation accuracy": 0.595625,
+   "validation macro-F1": 0.480561
+  },
+  {
+   "epoch": 13,
+   "learning rate": 0.000345,
+   "train loss": 0.734262,
+   "validation loss": 1.304734,
+   "validation accuracy": 0.582726,
+   "validation macro-F1": 0.475077
+  },
+  {
+   "epoch": 14,
+   "learning rate": 0.000273,
+   "train loss": 0.721603,
+   "validation loss": 1.371765,
+   "validation accuracy": 0.591699,
+   "validation macro-F1": 0.475327
+  },
+  {
+   "epoch": 15,
+   "learning rate": 0.000206,
+   "train loss": 0.68511,
+   "validation loss": 1.399519,
+   "validation accuracy": 0.568704,
+   "validation macro-F1": 0.470885
+  },
+  {
+   "epoch": 16,
+   "learning rate": 0.000146,
+   "train loss": 0.693204,
+   "validation loss": 1.294704,
+   "validation accuracy": 0.579921,
+   "validation macro-F1": 0.47193
+  },
+  {
+   "epoch": 17,
+   "learning rate": 9.5e-05,
+   "train loss": 0.671688,
+   "validation loss": 1.255524,
+   "validation accuracy": 0.604599,
+   "validation macro-F1": 0.492262
+  },
+  {
+   "epoch": 18,
+   "learning rate": 5.4e-05,
+   "train loss": 0.653176,
+   "validation loss": 1.352901,
+   "validation accuracy": 0.60516,
+   "validation macro-F1": 0.495203
+  },
+  {
+   "epoch": 19,
+   "learning rate": 2.4e-05,
+   "train loss": 0.647665,
+   "validation loss": 1.302269,
+   "validation accuracy": 0.605721,
+   "validation macro-F1": 0.491711
+  },
+  {
+   "epoch": 20,
+   "learning rate": 6e-06,
+   "train loss": 0.637962,
+   "validation loss": 1.278398,
+   "validation accuracy": 0.609086,
+   "validation macro-F1": 0.496728
+  }
+ ],
+ "categories": [
+  "Projectile",
+  "Grenade",
+  "Mortar Bomb",
+  "Cartridge",
+  "Aviation Bomb"
+ ],
+ "cutoff": 0.966340959072113,
+ "channel_mean": [
+  0.532089114189148,
+  0.4938254952430725,
+  0.4553743302822113
+ ],
+ "channel_std": [
+  0.21207255125045776,
+  0.20222076773643494,
+  0.1984335482120514
+ ]
+}

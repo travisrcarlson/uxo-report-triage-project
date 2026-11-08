@@ -27,3 +27,6 @@ runs_smoke/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Models trained during development in Claude's workspace (the committed models are in models/)
+models_dev/
