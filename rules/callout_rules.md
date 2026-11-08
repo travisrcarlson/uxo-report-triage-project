@@ -5,7 +5,7 @@ written for a call centre modelled on the Swiss Armed Forces' national reporting
 they are not the procedure of any real service. The public guidance quoted comes from the Swiss Army's own pages.
 
 > **Status:** drafted by Claude from the public guidance, then set by the project's EOD specialist, who answered each
-> rule and Claude's readings of his answers on 8 November 2026. The one point marked *to confirm* waits for his OK.
+> rule, Claude's readings of his answers and the choice of census data on 8 November 2026.
 
 ## The public guidance
 - "Blindgänger nie berühren" (never touch unexploded ordnance), then mark the place and report the find: by phone on
@@ -41,9 +41,10 @@ probability of encounter, will get higher priority").
 | Remote | High mountains away from paths, a closed military training area | Planned, and the flag, so a person confirms |
 
 The population of the municipality is a second factor, from census data (the EOD specialist, 8 November 2026: "we
-could likely pull census data as well to determine population density in the area"): a find in a densely populated
-municipality counts as much used, whatever the report says about the spot. *(To confirm: the source, the Swiss Federal
-Statistical Office's figures for each municipality, and how "densely populated" is decided.)*
+could likely pull census data as well to determine population density in the area"). He chose the official
+urban/rural class: a find in a municipality that Eurostat's degree of urbanisation classes as a city (densely
+populated) counts as much used, whatever the report says about the spot. The class comes from Eurostat's table of
+local administrative units, which classes 135 of Switzerland's 2,131 municipalities as cities (`data/README.md`).
 
 ## The floor
 Coded rules set the lowest urgency allowed, and the flag, from the report's facts: the fields of the report form, the
