@@ -4,16 +4,16 @@ The rules the agent looks up and the coded floor applies to every report. They a
 written for a call centre modelled on the Swiss Armed Forces' national reporting centre for unexploded ordnance (UXO);
 they are not the procedure of any real service. The public guidance quoted comes from the Swiss Army's own pages.
 
-> **Draft for confirmation.** Drafted by Claude from the public guidance; each rule is confirmed or changed by the
-> project's EOD specialist before the reference answers are set (plan step 5).
+> **Status:** drafted by Claude from the public guidance, then set by the project's EOD specialist, who answered each
+> rule on 8 November 2026. Points marked *to confirm* are Claude's reading of his answers, awaiting his OK.
 
 ## The public guidance
 - "Blindgänger nie berühren" (never touch unexploded ordnance), then mark the place and report the find: by phone on
   117, with the Army's Blindgänger app, or with the online form; keeping a find as a souvenir is forbidden
   ([Swiss Armed Forces, Blindgänger](https://www.vtg.admin.ch/de/blindgaenger)).
 - "Nicht berühren oder bewegen" (do not touch or move it) ([Swiss Armed Forces, 17 June 2026](https://www.vtg.admin.ch/de/newnsb/E0oKISSoFiFMOKGC_rvXx)).
-- Marking means placing a clearly visible marker by the find, such as tape or a cloth wedged between stones, or a
-  bottle on a stick ([Merkblatt "Wie markiere ich Blindgänger richtig?"](https://www.vtg.admin.ch/dam/de/sd-web/x3fPBnbTqKV9/Merkblatt_Blg_markieren.pdf)).
+- Marking means placing a clearly visible marker, such as tape or a cloth wedged between stones, or a bottle on a stick
+  ([Merkblatt "Wie markiere ich Blindgänger richtig?"](https://www.vtg.admin.ch/dam/de/sd-web/x3fPBnbTqKV9/Merkblatt_Blg_markieren.pdf)).
 
 ## Urgency levels
 | Level | Meaning |
@@ -26,8 +26,19 @@ There is no level below planned: every report of a possible explosive item gets 
 says that an item is safe.
 
 ## Specialist flag
-The flag means that an EOD specialist looks at the photo and the report before anyone goes. The floor below sets it;
-the agent may also set it, and only the duty officer may clear it.
+The flag means that a person, an EOD specialist or the duty officer, confirms the report before anyone goes. The
+floor below sets it; the agent may also set it, and only the duty officer may clear it.
+
+## The place
+Where the item is and who can reach it decide how many people could come across it, so the place sets the urgency
+when no other rule does (the EOD specialist, 8 November 2026: "Population-dense areas, because they'll have a higher
+probability of encounter, will get higher priority").
+
+| Place | Examples | Lowest urgency |
+|---|---|---|
+| Much used | A village or town, a busy path or road, a public park, a building site, a station | Same day *(to confirm)* |
+| Little used | Farmland, forest with paths, a quiet hillside | Planned |
+| Remote | High mountains away from paths, a closed military training area | Planned, and the flag, so a person confirms |
 
 ## The floor
 Coded rules set the lowest urgency allowed, and the flag, from the report's facts: the fields of the report form, the
@@ -37,22 +48,26 @@ urgency and any flag stand.
 
 | Rule | When | Lowest urgency | Flag |
 |---|---|---|---|
-| R1 | Children are with or near the item, or have handled it | Immediate | Yes |
-| R2 | People are close to the item and cannot easily be kept away: a path in use, a road, a building site, a garden, a school or a playground | Immediate | — |
+| R1 | Children are with or near the item, or have handled it, or the place is close to a school or another place where children are, such as a playground or a kindergarten | Immediate | Yes |
+| R2 | People are close to the item and cannot easily be kept away: a path in use, a road, a building site, a garden | Immediate | — |
 | R3 | The item was moved, picked up, or taken indoors or home | Same day | Yes |
-| R4 | The item is in or by a building, a road or a railway | Same day | — |
+| R4a | The item is in or by a building, a road or a railway, and the area cannot be evacuated and cordoned off, or the report does not say *(to confirm: "does not say" counts as "cannot")* | Immediate | — |
+| R4b | The item is in or by a building, a road or a railway, and the area can be evacuated and cordoned off | Same day | — |
 | R5 | The item looks damaged, or is giving off smoke, a smell or a liquid | Immediate | Yes |
-| R6 | The photo reader says "unknown", or there is no usable photo | — | Yes |
-| R7 | The report contradicts itself or its photo, or two reports describe different items at one place | — | Yes |
-| R8 | The person asks how to move, open or make the item safe | Same day | Yes |
-| — | None of the above | Planned | — |
+| R6 | The photo reader says "unknown", or there is no usable photo | Set by the place (above) | Yes |
+| R7 | The report contradicts itself or its photo, or two reports describe different items at one place | — | Yes: the duty officer decides |
+| R8 | The person asks how to move, open or make the item safe | — | — (the advice below answers, every time) |
+| — | None of the above | Set by the place (above) | — |
 
 ## Advice to the person who reported
 The only advice the system gives is this message. Anything else, and above all any advice on handling the item, is
-blocked and replaced with it.
+blocked and replaced with it. When a person asks how to move, open or make the item safe (R8), the answer is this
+message, every time.
 
-> Do not touch or move the item. Do not go back to it or closer to it. Keep other people away from it. Stay where
-> you can be reached on the number you gave, and follow what the call centre tells you.
+> Do not do anything to the item: do not touch it, move it or open it. Do not go back to it or closer to it, and keep
+> other people away. If you can do it without going closer, mark the place where you are with something clearly
+> visible, such as tape, a cloth or a bottle on a stick, so the team can find it. Stay where you can be reached on the
+> number you gave, and follow what the call centre tells you about where to meet the team.
 
-> **Open:** the official guidance asks people to mark the place, but marking means going back to the item. The
-> draft message leaves marking out; the project's EOD specialist decides.
+*(To confirm: the marking and meeting instructions, added after the EOD specialist's answer on R8: "Might give
+marking and coordinating instructions with it".)*
