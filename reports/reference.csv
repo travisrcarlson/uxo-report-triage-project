@@ -1,0 +1,37 @@
+report,urgency,flag,note,set_at
+R01,same day,yes,"Stop work on the site and cordon off the immediate area on the site. EOD team to respond, also give training for additional items if found",2026-11-09T13:21:30.529Z
+R02,planned,yes,"mark clearly, these are bullet cartridges and carry little risk",2026-11-09T13:21:39.085Z
+R03,immediate,yes,"do not touch, quarden off and await response.",2026-11-09T13:21:41.167Z
+R04,planned,yes,"I would tell the caller to just cordon off the immediate area and clearly mark the spot where this is found. Tell them not to manipulate the object in any way, shape, or form. This would get classified as a planned operation, as the item appears worn and has clearly been there for a long period of time without incident.",2026-11-09T13:21:44.889Z
+R05,immediate,yes,,2026-11-09T13:22:11.937Z
+R06,same day,yes,"cordon off area and await EOD team, team should look for more items",2026-11-09T13:22:42.137Z
+R07,immediate,yes,leave in place and evacuate and cordon the surrounding rooms,2026-11-09T13:22:36.312Z
+R08,same day,yes,Do not manipulate the object. Clearly mark and control your yard so no one else goes into the backyard.,2026-11-09T13:22:33.684Z
+R09,immediate,yes,"If EOD tech is on site for the police force, have them deal with it. If not, await our EOD response team before you reopen. Also, cordon off and clearly mark the building as ""no new"" so the public stays away.",2026-11-09T13:22:30.299Z
+R10,same day,yes,Clearly mark the area and make sure no one enters.,2026-11-09T13:29:12.477Z
+R11,same day,yes,Cordon off the area and await EOD team,2026-11-09T13:29:10.235Z
+R12,immediate,yes,Ensure you evacuate the area and tell local law enforcement to get at least 100 m around the site. Control area until EOD team arrives.,2026-11-09T13:29:07.725Z
+R13,same day,yes,Clearly mark the area and do not manipulate the object.,2026-11-09T13:29:05.278Z
+R14,planned,yes,"If you have control of the area, just clearly mark it. The UGV team will respond accordingly.",2026-11-09T13:29:03.011Z
+R15,planned,yes,Mark the suspected area and await the EOD team's response.,2026-11-09T13:28:59.212Z
+R16,same day,yes,Clearly mark the area and await the EOD team to respond. Do not manipulate the object.,2026-11-09T13:28:56.659Z
+R17,immediate,yes,Describe the object in more detail. Respond just because of the level of uncertainty on this.,2026-11-09T13:28:49.404Z
+R18,planned,no,"Ask for more detail of the photo. Right now, there's not enough information to deploy a team.",2026-11-09T13:28:53.083Z
+R19,same day,yes,"Instruct not to manipulate the object, to mark clearly, and to wait for the EOD team.",2026-11-09T13:28:43.621Z
+R20,planned,yes,"Clearly mark the onshore location from where to dive. This item is 12 m deep, so it will not be contacted by the public often.",2026-11-09T13:28:41.444Z
+R21,planned,yes,"Do not manipulate any objects in it. Just make sure no one goes near this object. It has clearly been there for a long time, so do not manipulate it and allow us to collect.",2026-11-09T13:28:38.514Z
+R22,same day,yes,Send more detail and just ensure no one manipulates it and that the area is safe. Await EOD team,2026-11-09T13:28:35.628Z
+R23,immediate,yes,"Immediately call law enforcement or first responders to assist with control and evacuate the area, and then make sure you clearly mark and await the EOD team.",2026-11-09T13:28:32.029Z
+R24,planned,yes,Flag the area and take GPS coordinates. Make sure you inform the authorities to not let anyone in there.,2026-11-09T13:28:28.442Z
+R25,same day,yes,Mark and cordon off the area. Take GPS coordinates and wait for the team to respond. Make sure no one manipulates the object.,2026-11-09T13:28:04.718Z
+R26,planned,yes,Clearly mark the area and take GPS coordinates.,2026-11-09T13:27:32.621Z
+R27,planned,yes,Good work. Do not manipulate the object.,2026-11-09T13:27:12.826Z
+R28,planned,yes,"This is a magazine cartridge and potentially contains ammunition, but is not immediately dangerous.",2026-11-09T13:26:53.801Z
+R29,planned,yes,Reinforcing is the proper behavior to pass this information.,2026-11-09T13:26:26.555Z
+R30,planned,yes,Take GPS coordinates and see if you can take pictures of the surrounding area so it's easy to find.,2026-11-09T13:26:05.254Z
+R31,immediate,yes,Continue to control the area and maintain a cordon around the area. Will respond.,2026-11-09T13:25:37.849Z
+R32,same day,yes,Reinforce that this is proper behavior. Do not manipulate the object further.,2026-11-09T13:25:11.497Z
+R33,planned,no,,2026-11-09T13:24:39.837Z
+R34,planned,yes,"Tell the individual to mark the area, take GPS coordinates, and do not touch or move the object.",2026-11-09T13:24:18.041Z
+R35,immediate,yes,Instruct to evacuate to a safe distance and call police to aid in cordoning off the area. Let others know to evacuate the area.,2026-11-09T13:23:42.446Z
+R36,planned,yes,,2026-11-09T13:23:14.515Z
