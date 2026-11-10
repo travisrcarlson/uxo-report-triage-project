@@ -117,21 +117,34 @@ def safety_claim_in(sentence):
     return False
 
 
+QUOTED = re.compile(r"\u201c[^\u201d]*\u201d|\"[^\"]*\"|\u2018[^\u2019]*\u2019")
+
+
 def filter_handling_advice(text):
     """Remove the sentences that advise handling an item, and those that say an item is safe.
 
-    Returns the cleaned text, the advice removed and the claims removed. The agent writes only for the duty officer,
-    so a removal is shown on the sign-off sheet; the person who reported only ever gets the fixed advice."""
+    Words in quotation marks are the report's or the person's, quoted by the agent, so they are not checked. Returns
+    the cleaned text, the advice removed and the claims removed. The agent writes only for the duty officer, so a
+    removal is shown on the sign-off sheet; the person who reported only ever gets the fixed advice."""
+    quotes = []
+
+    def protect(match):
+        quotes.append(match.group(0))
+        return f"QUOTED{len(quotes) - 1}X"
+
+    def restore(sentence):
+        return re.sub(r"QUOTED(\d+)X", lambda m: quotes[int(m.group(1))], sentence)
+
     kept, removed_advice, removed_claims = [], [], []
-    for sentence in sentences(text):
+    for sentence in sentences(QUOTED.sub(protect, text or "")):
         if handling_advice_in(sentence):
-            removed_advice.append(sentence)
+            removed_advice.append(restore(sentence))
             kept.append(REMOVED)
         elif safety_claim_in(sentence):
-            removed_claims.append(sentence)
+            removed_claims.append(restore(sentence))
             kept.append(REMOVED_CLAIM)
         else:
-            kept.append(sentence)
+            kept.append(restore(sentence))
     return " ".join(kept), removed_advice, removed_claims
 
 
