@@ -7,7 +7,7 @@ they are not the procedure of any real service. The public guidance quoted comes
 > **Status:** drafted by Claude from the public guidance, then set by the project's EOD specialist, who answered each
 > rule, Claude's readings of his answers and the choice of census data on 8 November 2026. The advice and the
 > sign-off sheet were updated on 10 November 2026 from his notes on his reference answers, with his agreement. Three
-> readings of the report form are Claude's and await his confirmation (marked "to be confirmed" below).
+> readings of the report form, Claude's, were confirmed by him the same day ("all 3 are good").
 
 ## The public guidance
 - "Blindgänger nie berühren" (never touch unexploded ordnance), then mark the place and report the find: by phone on
@@ -55,14 +55,14 @@ when it logs a fact, with a quote from the report, showing that people use it; i
 |---|---|
 | Settlement, building, building site, path or park, road or railway, school or playground | Much used |
 | Farmland, forest | Little used |
-| Water | Little used (to be confirmed) |
+| Water | Little used |
 | Mountain, training area | Remote |
-| Not stated | Not known: planned, and the flag, so a person confirms (to be confirmed) |
+| Not stated | Not known: planned, and the flag, so a person confirms |
 
-> **To be confirmed by the EOD specialist:** the table above does not name water, and the form can leave the place
-> out. Claude reads water as little used unless the report shows people there, and a place not stated like a remote
+> **Confirmed by the EOD specialist:** the table of places does not name water, and the form can leave the place
+> out. Claude read water as little used unless the report shows people there, and a place not stated like a remote
 > one, planned with the flag. These two readings, and the reading of R2 under "The floor", were made after his
-> reference answers were recorded.
+> reference answers were recorded; he confirmed all three on 10 November 2026 ("all 3 are good").
 
 ## The floor
 Coded rules set the lowest urgency allowed, and the flag, from the report's facts: the fields of the report form, the
@@ -86,8 +86,8 @@ urgency and any flag stand.
 How the floor reads the report form (`triage/floor.py`); the facts the agent logs can only add to it:
 - R1: children near the item, or having handled it, or a school or playground nearby; or a school or playground as
   the type of place.
-- R2: people close to the item, where the form does not say that the area can be evacuated and cordoned off (to be
-  confirmed: as in R4, a report that does not say counts as an area that cannot be controlled).
+- R2: people close to the item, where the form does not say that the area can be evacuated and cordoned off (as in
+  R4, a report that does not say counts as an area that cannot be controlled; confirmed on 10 November 2026).
 - R3: the item moved, or taken indoors or home.
 - R4: a building, or a road or railway, as the type of place.
 - R5: smoke, a smell or a liquid as the item's condition.
