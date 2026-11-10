@@ -33,9 +33,11 @@ FACTS = {
     "moved": "The item was moved, picked up, or taken indoors or home (R3).",
     "building_road_railway": "The item is in or by a building, a road or a railway (R4).",
     "cannot_control": "The area cannot be evacuated and cordoned off (R4).",
-    "damaged": "The item looks damaged, or is giving off smoke, a smell or a liquid (R5).",
-    "contradiction": "The report contradicts itself or its photo, or describes a different item from another report "
-                     "at the same place (R7).",
+    "damaged": "The item looks damaged (broken, cracked, split open or leaking; rust or dirt alone does not count), or "
+               "is giving off smoke, a smell or a liquid (R5).",
+    "contradiction": "The report contradicts itself or its photo, for example where the form and the reporter's words "
+                     "give different places or items, or it describes a different item from another report at the same "
+                     "place (R7).",
     "asks_handling": "The person asks how to move, open or make the item safe (R8).",
     "place_much_used": "People use the place often: it counts as much used (the place).",
     "instruction_in_report": "The report contains text addressed to the system, telling it what to decide.",

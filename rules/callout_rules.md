@@ -9,7 +9,9 @@ they are not the procedure of any real service. The public guidance quoted comes
 > sign-off sheet were updated on 10 November 2026 from his notes on his reference answers, with his agreement. Three
 > readings of the report form, Claude's and made after his reference answers were recorded, were confirmed by him
 > the same day ("all 3 are good"): water as a little-used place, a place not stated as planned with the flag, and R2
-> where the form does not say that the area can be controlled.
+> where the form does not say that the area can be controlled. After the smoke test on 10 November 2026 he confirmed that
+> rust or dirt alone is not damage (R5) and that a disagreement between the form and the reporter's words is a
+> contradiction (R7) ("Both").
 
 ## The public guidance
 - "Blindgänger nie berühren" (never touch unexploded ordnance), then mark the place and report the find: by phone on
@@ -77,9 +79,9 @@ urgency and any flag stand.
 | R3 | The item was moved, picked up, or taken indoors or home | Same day | Yes |
 | R4a | The item is in or by a building, a road or a railway, the area cannot be evacuated and cordoned off (or the report does not say), and the place is much used or densely populated | Immediate | — |
 | R4b | The item is in or by a building, a road or a railway, in any other case | Same day | — |
-| R5 | The item looks damaged, or is giving off smoke, a smell or a liquid | Immediate | Yes |
+| R5 | The item looks damaged (broken, cracked, split open or leaking; rust or dirt alone does not count), or is giving off smoke, a smell or a liquid | Immediate | Yes |
 | R6 | The photo reader says "unknown", or there is no usable photo | Set by the place (above) | Yes |
-| R7 | The report contradicts itself or its photo, or two reports describe different items at one place | — | Yes: the duty officer decides |
+| R7 | The report contradicts itself or its photo, including where the form and the reporter's words disagree, or two reports describe different items at one place | — | Yes: the duty officer decides |
 | R8 | The person asks how to move, open or make the item safe | — | — (the advice below answers, every time) |
 | — | None of the above | Set by the place (above) | — |
 
