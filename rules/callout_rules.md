@@ -6,8 +6,8 @@ they are not the procedure of any real service. The public guidance quoted comes
 
 > **Status:** drafted by Claude from the public guidance, then set by the project's EOD specialist, who answered each
 > rule, Claude's readings of his answers and the choice of census data on 8 November 2026. The advice and the
-> sign-off sheet were updated on 10 November 2026 from his notes on his reference answers, with his agreement. Two
-> readings of the report form's types of place are Claude's and await his confirmation (marked below).
+> sign-off sheet were updated on 10 November 2026 from his notes on his reference answers, with his agreement. Three
+> readings of the report form are Claude's and await his confirmation (marked "to be confirmed" below).
 
 ## The public guidance
 - "Blindgänger nie berühren" (never touch unexploded ordnance), then mark the place and report the find: by phone on
@@ -61,7 +61,8 @@ when it logs a fact, with a quote from the report, showing that people use it; i
 
 > **To be confirmed by the EOD specialist:** the table above does not name water, and the form can leave the place
 > out. Claude reads water as little used unless the report shows people there, and a place not stated like a remote
-> one, planned with the flag. Both readings were made after his reference answers were recorded.
+> one, planned with the flag. These two readings, and the reading of R2 under "The floor", were made after his
+> reference answers were recorded.
 
 ## The floor
 Coded rules set the lowest urgency allowed, and the flag, from the report's facts: the fields of the report form, the
@@ -81,6 +82,17 @@ urgency and any flag stand.
 | R7 | The report contradicts itself or its photo, or two reports describe different items at one place | — | Yes: the duty officer decides |
 | R8 | The person asks how to move, open or make the item safe | — | — (the advice below answers, every time) |
 | — | None of the above | Set by the place (above) | — |
+
+How the floor reads the report form (`triage/floor.py`); the facts the agent logs can only add to it:
+- R1: children near the item, or having handled it, or a school or playground nearby; or a school or playground as
+  the type of place.
+- R2: people close to the item, where the form does not say that the area can be evacuated and cordoned off (to be
+  confirmed: as in R4, a report that does not say counts as an area that cannot be controlled).
+- R3: the item moved, or taken indoors or home.
+- R4: a building, or a road or railway, as the type of place.
+- R5: smoke, a smell or a liquid as the item's condition.
+- R6: "unknown" from the photo reader, or no photo.
+- R7: only from the agent's facts. R8: the code also looks for the question in the reporter's words.
 
 ## Advice to the person who reported
 Every report gets this message as the call centre's first answer (the EOD specialist, 8 November 2026: "the marking
