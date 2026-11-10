@@ -26,7 +26,7 @@ def signoff_sheet(session, label, model):
         photo = f"unknown (confidence {verdict['confidence']:.2f}, below the reader's cut-off)"
     else:
         photo = f"{verdict['category']} (confidence {verdict['confidence']:.2f})"
-    degurba = f" ({session.degurba_class}, Eurostat)" if session.degurba_class else ""
+    degurba = f"; Eurostat: {session.degurba_class}" if session.degurba_class else ""
     proposal = "fallback to the floor, with the flag" if final["fallback"] else "agent's proposal, within the floor"
     lines = [f"# Sign-off sheet: {report['id']}, {label}", "",
              f"Received: {report['received']} ({report['channel']}), from a {report['reporter']}  ",
