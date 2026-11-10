@@ -30,6 +30,10 @@ DATA_DIR = Path("data")
 MODELS_DIR = Path("models")
 GENERATED_ZIP = "generated_crops_64.zip"
 GENERATED_CSV = "generated_manifest.csv"
+GENERATED_SHA256 = {   # the generated images as committed (`python -m triage.generated_images train` wrote them)
+    GENERATED_ZIP: "899a29423cfd32962473b7f66f9c5bbd6342777a4aa25a94fcb1c48e85f537f6",
+    GENERATED_CSV: "11c34e55f6204c06c7e421f323cf44fe228671e4d32c03a1637da1b1de8b2b7a",
+}
 P5_EXPECTED_SHA256 = {   # P5's data files, as recorded in P5
     "mine_crops_64.zip": "2ddc12cd38dac2b2d621341171b3163d6e7b74d018854b09edabc7cceaa49adb",
     "crops_manifest.csv": "cac0c5593c0b37df522bc7ac3762bf1801d0edf11f5148760c37dbecfe69c286",
@@ -222,8 +226,16 @@ def write_generated(jpegs, types, data_dir=DATA_DIR):
                   "seed": GENERATED_SEED}).to_csv(Path(data_dir) / GENERATED_CSV, index=False, lineterminator="\n")
 
 
+def check_generated(data_dir=DATA_DIR):
+    """Check the generated images and their manifest against their recorded SHA-256; return {file: True or False}."""
+    return {name: file_digest(Path(data_dir) / name) == digest for name, digest in GENERATED_SHA256.items()}
+
+
 def load_generated(data_dir=DATA_DIR):
-    """The generated images (8-bit, (n, 64, 64, 3)) and their manifest."""
+    """The generated images (8-bit, (n, 64, 64, 3)) and their manifest, after checking their checksums."""
+    checks = check_generated(data_dir)
+    if not all(checks.values()):
+        raise ValueError(f"generated images differ from their recorded checksums: {checks}")
     manifest = pd.read_csv(Path(data_dir) / GENERATED_CSV)
     with zipfile.ZipFile(Path(data_dir) / GENERATED_ZIP) as archive:
         images = np.stack([np.asarray(Image.open(io.BytesIO(archive.read(n))).convert("RGB")) for n in manifest.file])

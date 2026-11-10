@@ -7,7 +7,9 @@ they are not the procedure of any real service. The public guidance quoted comes
 > **Status:** drafted by Claude from the public guidance, then set by the project's EOD specialist, who answered each
 > rule, Claude's readings of his answers and the choice of census data on 8 November 2026. The advice and the
 > sign-off sheet were updated on 10 November 2026 from his notes on his reference answers, with his agreement. Three
-> readings of the report form, Claude's, were confirmed by him the same day ("all 3 are good").
+> readings of the report form, Claude's and made after his reference answers were recorded, were confirmed by him
+> the same day ("all 3 are good"): water as a little-used place, a place not stated as planned with the flag, and R2
+> where the form does not say that the area can be controlled.
 
 ## The public guidance
 - "Blindgänger nie berühren" (never touch unexploded ordnance), then mark the place and report the find: by phone on
@@ -59,10 +61,8 @@ when it logs a fact, with a quote from the report, showing that people use it; i
 | Mountain, training area | Remote |
 | Not stated | Not known: planned, and the flag, so a person confirms |
 
-> **Confirmed by the EOD specialist:** the table of places does not name water, and the form can leave the place
-> out. Claude read water as little used unless the report shows people there, and a place not stated like a remote
-> one, planned with the flag. These two readings, and the reading of R2 under "The floor", were made after his
-> reference answers were recorded; he confirmed all three on 10 November 2026 ("all 3 are good").
+When the census or the agent makes a place much used, the place the form gives still counts: the higher urgency
+and any flag stand, so a much-used place keeps the flag of a remote or unknown one.
 
 ## The floor
 Coded rules set the lowest urgency allowed, and the flag, from the report's facts: the fields of the report form, the
@@ -98,8 +98,7 @@ How the floor reads the report form (`triage/floor.py`); the facts the agent log
 Every report gets this message as the call centre's first answer (the EOD specialist, 8 November 2026: "the marking
 and evacuation protocols should be in place for all occurrences"). It is the only advice the system gives: anything
 else, and above all any advice on handling the item, is blocked and replaced with it. When a person asks how to move,
-open or make the item safe (R8), the answer is this message again. The thanks and the request for the location and
-photos of the surroundings come from his notes on his reference answers (agreed on 10 November 2026: "totally agree").
+open or make the item safe (R8), the answer is this message again.
 
 > Thank you for reporting this; it was the right thing to do. Do not do anything to the item: do not touch it, move it
 > or open it. Move away from it, do not go back, and keep other people away. If you can do it without going closer,
@@ -111,5 +110,4 @@ photos of the surroundings come from his notes on his reference answers (agreed 
 ## Marking and evacuation on the sign-off sheet
 For every report the sheet states what the report says about marking, and whether the area can be evacuated and
 cordoned off; the duty officer decides whether to clear the area. The sheet also reminds the duty officer to ask the
-police to help clear and cordon off the area where that is needed (from the EOD specialist's notes on his reference
-answers, agreed on 10 November 2026).
+police to help clear and cordon off the area where that is needed (agreed with the EOD specialist on 10 November 2026).

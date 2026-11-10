@@ -1,7 +1,8 @@
 """The sign-off sheet: one page per report and run for the duty officer, who decides.
 
-It is laid out so that the duty officer checks the photo and the facts, not only the proposal: the photo comes first,
-each fact shows where it came from, the floor shows which rules set it, and what the agent did not use is listed.
+It is laid out so that the duty officer checks the photo and the facts before reading the proposal: the photo comes
+first, each fact shows where it came from, the floor shows which rules set it, and what the agent did not use is
+listed.
 """
 from triage import floor as floor_mod
 
@@ -17,7 +18,8 @@ def cell(text):
     return str(text).replace("|", "/").replace("\n", " ")
 
 
-def signoff_sheet(session, label, model):
+def signoff_sheet(session, label, model, generated_photo=False):
+    """The sheet as Markdown. generated_photo marks a test photo made by P5's GAN, so it is labelled as generated."""
     report, final, check = session.report, session.final, session.final_check
     verdict = session.verdict
     if verdict is None:
@@ -27,21 +29,20 @@ def signoff_sheet(session, label, model):
     else:
         photo = f"{verdict['category']} (confidence {verdict['confidence']:.2f})"
     degurba = f"; Eurostat: {session.degurba_class}" if session.degurba_class else ""
-    proposal = "fallback to the floor, with the flag" if final["fallback"] else "agent's proposal, within the floor"
+    source = "fallback to the floor, with the flag" if final["fallback"] else "agent's proposal, within the floor"
+    photo_line = "- Photo: none"
+    if verdict is not None:
+        photo_line = (f"- Photo: attached, taken from where the reporter stood "
+                      f"(`reports/photos/{report.get('control_of', report['id'])}.png`)")
+        if generated_photo:
+            photo_line += ". GENERATED: in this test the photo is an image made by P5's GAN, not a real photo"
     lines = [f"# Sign-off sheet: {report['id']}, {label}", "",
              f"Received: {report['received']} ({report['channel']}), from a {report['reporter']}  ",
              f"Municipality: {report['municipality']}{degurba}  ",
              f"Place: {report['place']}  ",
              f"Model: {model}", "",
-             "## Proposal",
-             f"- Urgency: **{final['urgency']}** (floor: {check['floor_urgency']})",
-             f"- Specialist flag: **{yes_no(final['flag'])}** (floor: {yes_no(check['floor_flag'])})",
-             f"- Source: {proposal}",
-             f"- Agent's confidence: {final['confidence']}", "",
-             "Agent's summary:", "", "> " + cell(final["summary"]), "",
              "## Check 1: look at the photo yourself",
-             f"- Photo: {'none' if verdict is None else 'attached, taken from where the reporter stood'}"
-             + ("" if verdict is None else f" (`reports/photos/{report.get('control_of', report['id'])}.png`)"),
+             photo_line,
              f"- The photo reader says: {photo}. The reader names one of five categories or says unknown; it never "
              "says that an item is safe.", "",
              "## Check 2: the facts and where they come from",
@@ -62,11 +63,19 @@ def signoff_sheet(session, label, model):
               f"- Marked: {report['marked']}",
               f"- Area can be evacuated and cordoned off: {report['controllable']}",
               "- Ask the police to help clear and cordon off the area where that is needed.", "",
+              "## Proposal",
+              f"- Urgency: **{final['urgency']}** (floor: {check['floor_urgency']})",
+              f"- Specialist flag: **{yes_no(final['flag'])}** (floor: {yes_no(check['floor_flag'])})",
+              f"- Source: {source}",
+              f"- Agent's confidence: {final['confidence']}", "",
+              "Agent's summary:", "", "> " + cell(final["summary"]), "",
               "## Advice sent to the person who reported", "", "> " + final["advice"], "",
               "- The person asked how to handle the item (R8): "
               + ("; ".join(f"\"{q}\"" for q in session.handling_questions) + "; answered with the advice above"
                  if session.handling_questions else "no"),
-              f"- Advice on handling removed from the agent's text: {'; '.join(session.advice_removed) or 'none'}", "",
+              f"- Advice on handling removed from the agent's text: {'; '.join(session.advice_removed) or 'none'}",
+              "- Claims that the item is safe removed from the agent's text: "
+              + ("; ".join(session.claims_removed) or "none"), "",
               "## Flags",
               "- Text in the report addressed to the system, found by the code: "
               + ("; ".join(f"\"{t}\"" for t in session.instructions) or "none"),
@@ -76,7 +85,8 @@ def signoff_sheet(session, label, model):
                                                        for v in session.vetoes) or "none"),
               f"- Quote check failures: {len(session.quote_failures)}; tool errors: {len(session.tool_errors)}", "",
               "## What the agent did not use",
-              f"- Report sections not read: {', '.join(s for s in ('form', 'description') if s not in session.sections_read) or 'none'}",
+              "- Report sections not read: "
+              + (", ".join(s for s in ("form", "description") if s not in session.sections_read) or "none"),
               f"- Photo verdict read: {yes_no(session.photo_read)}",
               f"- Rule topics looked up: {', '.join(dict.fromkeys(session.rules_read)) or 'none'}", "",
               "## Sign-off", "",

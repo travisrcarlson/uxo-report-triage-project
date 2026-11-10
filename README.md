@@ -1,6 +1,6 @@
 # Triaging UXO Reports with an AI Agent
 
-A system that helps the duty officer of a call centre triage reports of unexploded ordnance (UXO) found by members of the public. For each report, made of a photo, a place and a short description, it proposes an urgency level (immediate, same day or planned) and a flag when an explosive ordnance disposal (EOD) specialist must see the photo before anyone goes. The duty officer makes every decision.
+A system that helps the duty officer of a call centre triage reports of unexploded ordnance (UXO) found by members of the public. For each report, made of a photo, a place and a short description, it proposes an urgency level (immediate, same day or planned) and a flag when an explosive ordnance disposal (EOD) specialist or the duty officer must confirm the report before anyone goes. The duty officer makes every decision.
 
 It is the Industry-Integrated AI Systems Synthesis project (Project 7) of the AI Mastery Capstone, part of the Master of Science in Artificial Intelligence of the Udacity Institute of AI & Technology.
 
@@ -16,7 +16,7 @@ This is a student project. It is not affiliated with the Swiss Armed Forces, and
 2. **Unfamiliar items.** Images the reader never trained on, among them images made by the author's earlier generative adversarial network and labelled as generated, should come back "unknown".
 3. **Agent.** An agent built like the author's earlier land release agent reads each report through tools and proposes the urgency and the flag.
 4. **Rules floor.** Coded rules set the lowest urgency allowed and the flag from the report's facts; the agent can raise the urgency but never go below the floor.
-5. **Advice.** The only advice given to the person who reported is the official public message; any advice on handling an item is blocked.
+5. **Advice.** The only advice given to the person who reported is one fixed message, set by the project's EOD specialist from the Army's public guidance; any advice on handling an item, and any claim that an item is safe, is removed from what the agent writes.
 6. **Sign-off sheet.** One page per report for the duty officer, who decides.
 
 ## How to run

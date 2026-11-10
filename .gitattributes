@@ -1,5 +1,6 @@
-# Keep the reports, rules, prompts and run records byte for byte as committed,
+# Keep the data, reports, rules, prompts and run records byte for byte as committed,
 # so their checksums match on every operating system.
+data/** -text
 reports/** -text
 rules/** -text
 prompts/** -text

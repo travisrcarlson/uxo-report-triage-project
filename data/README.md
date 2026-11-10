@@ -10,4 +10,4 @@
 Changes made to the Eurostat table: only the Swiss sheet is kept, the columns are renamed, the area is converted to
 km², and the density is computed from the population and the area. Eurostat is not responsible for this extract.
 
-The SHA-256 of every file is checked in code before use (`triage/photo_reader.py`, `triage/municipalities.py`).
+The SHA-256 of every file is checked in code before use (`triage/photo_reader.py`, `triage/generated_images.py`, `triage/municipalities.py`). The files are kept byte for byte (`data/** -text` in `.gitattributes`), so a checkout on Windows does not change their line endings.

@@ -62,16 +62,28 @@ def controllable(report):
     return str(report["controllable"]).lower().startswith("yes")
 
 
-def place_of(report, dense, facts=()):
-    """The place (much used, little used, remote or not known) and why."""
+def place_hits(report, dense, facts=()):
+    """The place rule as hits: the place the form gives, and, where the census or a logged fact makes the place much
+    used, a second hit for that. Both stand, so a much-used place keeps the flag of a remote or unknown one."""
     base = PLACE_OF_TYPE[report["place_type"]]
-    if dense:
-        return "much used", "the municipality is a city (densely populated) in Eurostat's degree of urbanisation"
-    if "place_much_used" in facts and base != "much used":
-        return "much used", "the agent logged, with a quote, that people use the place often"
-    if base == "not known":
-        return base, "the report does not say where the item is"
-    return base, f"the form gives the type of place as {report['place_type']}"
+    why = ("the report does not say where the item is" if base == "not known"
+           else f"the form gives the type of place as {report['place_type']}")
+    urgency, flag = PLACE_URGENCY[base]
+    hits = [Hit("Place", urgency, flag, f"{base}: {why}")]
+    if base != "much used":
+        much_used = PLACE_URGENCY["much used"][0]
+        if dense:
+            hits.append(Hit("Census", much_used, False, "much used: the municipality is a city (densely populated) "
+                                                        "in Eurostat's degree of urbanisation"))
+        elif "place_much_used" in facts:
+            hits.append(Hit("Busy place", much_used, False, "much used: logged by the agent"))
+    return hits
+
+
+def place_of(report, dense, facts=()):
+    """The place (much used, little used, remote or not known) and why, as the floor counts it."""
+    hits = place_hits(report, dense, facts)
+    return hits[-1].why.split(": ", 1)[0], hits[-1].why.split(": ", 1)[1]
 
 
 def floor(report, verdict, facts=(), dense=False, asks_handling=False):
@@ -85,10 +97,8 @@ def floor(report, verdict, facts=(), dense=False, asks_handling=False):
     Returns {"urgency", "flag", "place", "place_why", "hits"}.
     """
     facts = set(facts)
-    hits = []
+    hits = place_hits(report, dense, facts)
     place, place_why = place_of(report, dense, facts)
-    urgency, flag = PLACE_URGENCY[place]
-    hits.append(Hit("Place", urgency, flag, f"{place}: {place_why}"))
 
     children = report["children"] in CHILDREN_ON_FORM or report["place_type"] == "school or playground"
     if children or "children" in facts:
@@ -138,7 +148,8 @@ def floor(report, verdict, facts=(), dense=False, asks_handling=False):
 
 def rule_names(rules):
     """'R1', 'R1 and R3', 'the place, R1 and R6': the rules as the subject of a sentence, and its verb."""
-    names = ["the place" if rule == "Place" else rule for rule in rules]
+    spoken = {"Place": "the place", "Census": "the census class", "Busy place": "the busy place"}
+    names = [spoken.get(rule, rule) for rule in rules]
     text = names[0] if len(names) == 1 else ", ".join(names[:-1]) + " and " + names[-1]
     return text[0].upper() + text[1:], "sets" if len(names) == 1 else "set"
 
