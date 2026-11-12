@@ -4,7 +4,7 @@ A system that helps the duty officer of a call centre triage reports of unexplod
 
 It is the Industry-Integrated AI Systems Synthesis project (Project 7) of the AI Mastery Capstone, part of the Master of Science in Artificial Intelligence of the Udacity Institute of AI & Technology.
 
-> **Status, 10 November 2026:** the photo reader, the generated images, the call-out rules, the reports, the reference answers, the agent and the notebook are in place. The runs with the model and the evaluation come next; this README is completed at the end.
+> **Status, 12 November 2026:** the photo reader, the generated images, the call-out rules, the reports, the reference answers, the agent and the notebook are in place, and the full run (111 runs, saved in `runs/`) and its evaluation are in the notebook (sections 10 to 14). This README is completed at the end.
 
 ## The setting
 The call centre is modelled on Switzerland's national reporting centre for UXO, which the Swiss Army's KAMIR command runs ([Swiss Armed Forces](https://www.vtg.admin.ch/de/kampfmittelbeseitiger-schweizer-armee-kamir)). The public sent in 855 reports of munitions finds in 2025 ([blue News, 17 June 2026](https://www.bluewin.ch/en/news/army-cleared-227-unexploded-ordnances-last-year-3284723.html)). The public rule is never to touch a find, to mark the place and to report it: by phone on 117, with the Army's Blindgänger app or with its online form ([Swiss Armed Forces](https://www.vtg.admin.ch/de/blindgaenger)).
