@@ -1,0 +1,288 @@
+{
+ "model": "gpt-6-luna",
+ "reasoning_effort": "medium",
+ "max_steps": 20,
+ "runs_per_report": 3,
+ "reports": [
+  "R01",
+  "R02",
+  "R03",
+  "R04",
+  "R05",
+  "R06",
+  "R07",
+  "R08",
+  "R09",
+  "R10",
+  "R11",
+  "R12",
+  "R13",
+  "R14",
+  "R15",
+  "R16",
+  "R17",
+  "R18",
+  "R19",
+  "R20",
+  "R21",
+  "R22",
+  "R23",
+  "R24",
+  "R25",
+  "R26",
+  "R27",
+  "R28",
+  "R29",
+  "R30",
+  "R31",
+  "R32",
+  "R33",
+  "R34",
+  "R35",
+  "R36",
+  "R33-control"
+ ],
+ "inputs_sha": "389e22414375",
+ "started": "2026-11-11T01:22:19+00:00",
+ "finished": "2026-11-11T01:46:36+00:00",
+ "stopped_on_error": "",
+ "python": "3.13.0",
+ "platform": "Windows-11-10.0.26300-SP0",
+ "openai": "3.37.0",
+ "torch": "2.14.1+cpu",
+ "pandas": "3.1.0",
+ "urgency_levels": [
+  "planned",
+  "same day",
+  "immediate"
+ ],
+ "photo_verdicts": {
+  "R01": {
+   "category": "unknown",
+   "confidence": 0.7709,
+   "best_guess": "Projectile"
+  },
+  "R02": {
+   "category": "unknown",
+   "confidence": 0.6193,
+   "best_guess": "Aviation Bomb"
+  },
+  "R03": {
+   "category": "unknown",
+   "confidence": 0.4887,
+   "best_guess": "Grenade"
+  },
+  "R04": {
+   "category": "unknown",
+   "confidence": 0.9662,
+   "best_guess": "Projectile"
+  },
+  "R05": {
+   "category": "unknown",
+   "confidence": 0.7397,
+   "best_guess": "Mortar Bomb"
+  },
+  "R06": {
+   "category": "unknown",
+   "confidence": 0.8446,
+   "best_guess": "Projectile"
+  },
+  "R07": {
+   "category": "unknown",
+   "confidence": 0.4827,
+   "best_guess": "Projectile"
+  },
+  "R08": {
+   "category": "unknown",
+   "confidence": 0.765,
+   "best_guess": "Grenade"
+  },
+  "R09": {
+   "category": "unknown",
+   "confidence": 0.9051,
+   "best_guess": "Grenade"
+  },
+  "R10": {
+   "category": "unknown",
+   "confidence": 0.6655,
+   "best_guess": "Aviation Bomb"
+  },
+  "R11": {
+   "category": "Projectile",
+   "confidence": 0.9959,
+   "best_guess": "Projectile"
+  },
+  "R12": {
+   "category": "unknown",
+   "confidence": 0.7035,
+   "best_guess": "Projectile"
+  },
+  "R13": {
+   "category": "unknown",
+   "confidence": 0.508,
+   "best_guess": "Projectile"
+  },
+  "R14": {
+   "category": "unknown",
+   "confidence": 0.5332,
+   "best_guess": "Projectile"
+  },
+  "R15": {
+   "category": "unknown",
+   "confidence": 0.5807,
+   "best_guess": "Mortar Bomb"
+  },
+  "R16": {
+   "category": "unknown",
+   "confidence": 0.5731,
+   "best_guess": "Mortar Bomb"
+  },
+  "R17": null,
+  "R18": {
+   "category": "unknown",
+   "confidence": 0.458,
+   "best_guess": "Projectile"
+  },
+  "R19": {
+   "category": "unknown",
+   "confidence": 0.7608,
+   "best_guess": "Grenade"
+  },
+  "R20": {
+   "category": "unknown",
+   "confidence": 0.3976,
+   "best_guess": "Mortar Bomb"
+  },
+  "R21": {
+   "category": "Grenade",
+   "confidence": 0.9955,
+   "best_guess": "Grenade"
+  },
+  "R22": {
+   "category": "unknown",
+   "confidence": 0.3774,
+   "best_guess": "Projectile"
+  },
+  "R23": {
+   "category": "unknown",
+   "confidence": 0.583,
+   "best_guess": "Grenade"
+  },
+  "R24": {
+   "category": "unknown",
+   "confidence": 0.4119,
+   "best_guess": "Projectile"
+  },
+  "R25": {
+   "category": "unknown",
+   "confidence": 0.9341,
+   "best_guess": "Mortar Bomb"
+  },
+  "R26": {
+   "category": "unknown",
+   "confidence": 0.9512,
+   "best_guess": "Mortar Bomb"
+  },
+  "R27": {
+   "category": "unknown",
+   "confidence": 0.9596,
+   "best_guess": "Projectile"
+  },
+  "R28": {
+   "category": "unknown",
+   "confidence": 0.6394,
+   "best_guess": "Projectile"
+  },
+  "R29": {
+   "category": "unknown",
+   "confidence": 0.5048,
+   "best_guess": "Grenade"
+  },
+  "R30": {
+   "category": "unknown",
+   "confidence": 0.6864,
+   "best_guess": "Grenade"
+  },
+  "R31": {
+   "category": "unknown",
+   "confidence": 0.7664,
+   "best_guess": "Mortar Bomb"
+  },
+  "R32": {
+   "category": "unknown",
+   "confidence": 0.9024,
+   "best_guess": "Projectile"
+  },
+  "R33": {
+   "category": "unknown",
+   "confidence": 0.4903,
+   "best_guess": "Projectile"
+  },
+  "R34": {
+   "category": "unknown",
+   "confidence": 0.353,
+   "best_guess": "Grenade"
+  },
+  "R35": {
+   "category": "unknown",
+   "confidence": 0.6573,
+   "best_guess": "Grenade"
+  },
+  "R36": null,
+  "R33-control": {
+   "category": "unknown",
+   "confidence": 0.4903,
+   "best_guess": "Projectile"
+  }
+ },
+ "files": {
+  "reports/reports.json": "4903894e01d7cd915c7a4fcf135ab84132af397616ad4a2f851e55512e7cb710",
+  "reports/photos/R01.png": "331e09ff75c1a7683ece00a384a479332511afed278d6d85f3a6777ec9e34235",
+  "reports/photos/R02.png": "4766133d88ec675242c3402f6f22c5043722890d81d46392616f9b17f8e6c74d",
+  "reports/photos/R03.png": "5cf35ef22790c394f532959a4cce61fc4b86d711c2fdb79697584c56051b2fde",
+  "reports/photos/R04.png": "e9c1aadd114084084ee63b535cc03d5b7810e8af63751e324b23c2b0787fa5ae",
+  "reports/photos/R05.png": "7291057bf4843c1517ce8f4e04c9b9b1b8a63db96b6abce7dedbe00a2ca790ef",
+  "reports/photos/R06.png": "dad7cbab8b287bde27d94565e24d9907392a51a59664f2ed2977ca27fff02339",
+  "reports/photos/R07.png": "429b9c44b1b0cee32ba6ffd1710b9e57926496aa50996669cc6df2a2424271b0",
+  "reports/photos/R08.png": "62f3e7663aee09a6ce4c106e03cafe6c4440cff8c2dd8726c35a3379028c4fa3",
+  "reports/photos/R09.png": "da77262ff37753c63d43e4ea7dd4f3e47af9f52292060c2236330840ec392c72",
+  "reports/photos/R10.png": "1fae6d2a56b6fceb2041a8fba38bd52dc352986ea256701f3142c81babb6e799",
+  "reports/photos/R11.png": "795ff96c75045f87e755df2666e713f956d25ab40b6a96b9802d33619f32b5de",
+  "reports/photos/R12.png": "c12a993c4edbffee0d2b121aed401385a69f714d2e24380a08ceb6d45403d6eb",
+  "reports/photos/R13.png": "9480271a3b89f30febcd214fe2150960dd6003a9291e871239da23a49d5a31e5",
+  "reports/photos/R14.png": "fe1b6e2de7dd028099e58d1b79a7e2343fc43a2a4bac019dd102cf6a48fa3fac",
+  "reports/photos/R15.png": "93d1352b0e93f70288042580b06eed7ec27b965d6d4d13383fff837eb9706572",
+  "reports/photos/R16.png": "c14dc1deb7f68f6bd9a3d88527884c1b9953d0de5fa5bbb121bc0dffa55d7aa2",
+  "reports/photos/R18.png": "7572553913bf48de8f1c91e40531b5d51ef99e37721ea17723e8e3fbb583aa69",
+  "reports/photos/R19.png": "b40935276f28ffa7f4261f7e64656213fa745e06c945e7f24d12fce2c4d23066",
+  "reports/photos/R20.png": "62f9dc53ed970166952b122cbfedf42136f7968e35066218001252202faf9095",
+  "reports/photos/R21.png": "3e72fc6418644d0fb9ac9c784d65983b5d133796cb099625c61d416273a3eb33",
+  "reports/photos/R22.png": "316538a18aaea58e7949b4e200439cc81b639c428a82c2607f7b1f9eb91744da",
+  "reports/photos/R23.png": "74bf42a1746bd77d554aab9a808149f33b7a217e877136725503ca914a3205fe",
+  "reports/photos/R24.png": "c3e7376b69b12888fac4e295e4204b47e27db32eef85b9e52d8cc447b94914bd",
+  "reports/photos/R25.png": "e68ae419cfa08396cf0faf172931fbbdb97f62c5cba0802e1d23443596553559",
+  "reports/photos/R26.png": "ea6e7b229198e5730bfa64624b038a239db4552e1c42cce229e9659acb48e1e5",
+  "reports/photos/R27.png": "73ef00720c3bff3b50bce7415a7e6d5a5b89e34d6d045a1ce6c65e00b6cc0150",
+  "reports/photos/R28.png": "e5c25d7fae4539971f1d4787861137838953c8d37458d848a79eaff9f54c6112",
+  "reports/photos/R29.png": "c0482e11ae684314eb15f0d9c9019c2e011aa10319dcf3a722bf051017858297",
+  "reports/photos/R30.png": "1f611b8f98b3ca18469d68713ee96ccd4322238c2c1888920fa71da92aaf5dbd",
+  "reports/photos/R31.png": "2fca55108191d4430b1dd166e4df52dc540d7a4550421d68b1ebfedf2eeaea0c",
+  "reports/photos/R32.png": "365121acf175d661e7928587779f483293f7932cac44142a7a76835742fdfeb3",
+  "reports/photos/R33.png": "e88e73f2c4eb845a9fdf3a20a0644152485c86dd7449d59959af8718f63921a7",
+  "reports/photos/R34.png": "4badac306bdf5534db2006640bfcfe8afd0f70f3a0a0e6719e1a7b24ee1aa3d5",
+  "reports/photos/R35.png": "c27a6b4239fcebd3d53c9900bd53b95f680dc906a9ed07fae1ca33ee66d9fbcf",
+  "rules/callout_rules.md": "b84f6393fd567d73a0580af39699a445db9580000ccf21cc408b63806cc58c8e",
+  "prompts/system_prompt.md": "a99c66f154f8f37a713e172b1f71f5fb352ef662f9914b8e0bce908c25b4589c",
+  "models/photo_reader.json": "22d2d31874f4b8e3625f77fa68627d120df2607dd099f1db65e1ce455208e30d",
+  "models/photo_reader.pt": "b480aceee8ba5b739e6eaedca9476ea9d6bfe9aab54188c7a8f7f834237114e0",
+  "data/ch_municipalities_degurba.csv": "23f1f6d8d27d0bb75d17a2a80b0507f65743e9649cc47447c74064f29b23bd18",
+  "triage/advice.py": "4ab628cfe4531bc79c24f0c85bbb2a92e6112caccbd08a39628f8dbf38870068",
+  "triage/agent.py": "6c4da872e744e87aea1f5a07b060be29e3dee36eeba50098a1fb238c9ef57b0c",
+  "triage/floor.py": "726b2aac155188d82807a2eb7548e098ebaebf63a883c22bdb435333ab22a472",
+  "triage/inputs.py": "5182fd32fe0664acd9a323aef8c1b2170776865cd5e8b1b7293a786ce75ca52a",
+  "triage/municipalities.py": "d62013337ceb4d9c2e59f43542923b5660dfca1cb70372af80885db96a4eebd6",
+  "triage/photo_reader.py": "33ed41ef66170e5a6d9c174bf64c10fc6a95e4d311bac2aabb2df7d75bb6cddd",
+  "triage/reports.py": "5c7375a1f2029c23b6f60e5310f552dde447ea9c9c3f57dd9dc8d32602057472",
+  "triage/sheets.py": "ca1c6cb727283cdfae62142cf892bc693980894847fbeb9d26979c9b29199e15"
+ }
+}
